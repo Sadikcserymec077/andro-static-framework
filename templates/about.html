@@ -1,0 +1,45 @@
+<!-- templates/about.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Static Analysis Framework</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">🔍 Static Analysis Framework</a>
+    <div class="ms-auto">
+      <a class="btn btn-outline-primary me-2" href="/">Upload</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="card p-4 shadow-sm">
+    <h3>About this Project</h3>
+    <p>This is a demo Static Analysis Framework for Android applications that integrates with <strong>MobSF</strong> to run static scans of APK files and visualize results in a modern, responsive dashboard.</p>
+
+    <h5>Features</h5>
+    <ul>
+      <li>Upload APK and trigger MobSF scan</li>
+      <li>View permissions, manifest issues, third-party libraries</li>
+      <li>Interactive charts and vulnerability table</li>
+      <li>Simple mitigation tips and export-ready JSON report</li>
+    </ul>
+
+    <h5>Future work</h5>
+    <ul>
+      <li>PDF report generation & email summary</li>
+      <li>Integrate additional tools: JADX, APKTool, QARK</li>
+      <li>Store history in MongoDB with user accounts</li>
+    </ul>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
